@@ -2,6 +2,7 @@ package com.example.testapplication1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
                 TextView textView = (TextView)findViewById(R.id.text3);
                 textView.setText("AAAAA");
                 Log.d("MainActivity", "button click");
+                Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                startActivity(intent);
             }
         });
     }
